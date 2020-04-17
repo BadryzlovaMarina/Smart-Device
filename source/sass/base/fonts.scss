@@ -36,12 +36,12 @@
 
 /* PTMono-Regular */
 @font-face {
-    font-family: "PT Mono";
-    src:
-      local("PT Mono"),
-      local("PTMono-Regular"),
-      url("../fonts/PTMono-Regular.woff2") format("woff2"),
-      url("../fonts/PTMono-Regular.woff") format("woff");
-    font-weight: 400;
-    font-style: normal;
+  font-family: "PT Mono";
+  src:
+    local("PT Mono"),
+    local("PTMono-Regular"),
+    url("../fonts/PTMono-Regular.woff2") format("woff2"),
+    url("../fonts/PTMono-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
 }

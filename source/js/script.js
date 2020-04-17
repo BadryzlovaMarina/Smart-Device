@@ -1,13 +1,14 @@
 'use strict';
 
 var phoneMask = IMask(
-  document.getElementById('phone-mask'), {
-    mask: '+{7} (000) 000-00-00'
-});
+    document.getElementById('phone-mask'), {
+      mask: '+{7} (000) 000-00-00'
+    }
+);
 
-var anchorLink = document.querySelectorAll('.anchor-link');
-if (anchorLink) {
-  anchorLink.forEach(function (link) {
+var anchor = document.querySelectorAll('.anchor-link');
+if (anchor) {
+  anchor.forEach(function (link) {
     link.addEventListener('click', function (evt) {
       evt.preventDefault();
       var blockId = link.getAttribute('href');
@@ -18,7 +19,6 @@ if (anchorLink) {
     });
   });
 }
-
 
 var link = document.querySelector('.header__button-callback');
 var popup = document.querySelector('.popup-feedback');
@@ -45,8 +45,8 @@ overlay.addEventListener('click', function (evt) {
 
 window.addEventListener('keydown', function (evt) {
   if (evt.keyCode === 27) {
-      evt.preventDefault();
-  if (popup.classList.contains('popup-feedback--show')) {
+    evt.preventDefault();
+    if (popup.classList.contains('popup-feedback--show')) {
       popup.classList.remove('popup-feedback--show');
       overlay.classList.remove('popup-overlay--show');
     }

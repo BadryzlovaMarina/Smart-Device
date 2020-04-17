@@ -15,7 +15,7 @@
     left: -30px;
     width: 220px;
     height: 317px;
-    background-image: url(../img/info-year@1x.png);
+    background-image: url("../img/info-year@1x.png");
     background-repeat: no-repeat;
     background-size: 220px auto;
   }
@@ -45,7 +45,7 @@
   }
 }
 
-@media (max-width: $tablet-width)  {
+@media (max-width: $tablet-width) {
   .info {
     width: 100%;
     padding-top: 16px;
@@ -94,10 +94,8 @@
 
   .info__description {
     margin-bottom: 40px;
-  }
 
-  .info__description {
-      &:last-of-type {
+    &:last-of-type {
       margin-bottom: 31px;
     }
   }

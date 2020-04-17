@@ -32,7 +32,7 @@
   position: relative;
   margin-right: 30px;
   margin-bottom: 30px;
-  width: calc((100% - 60px)/3);
+  width: calc((100% - 60px) / 3);
 
   img {
     width: 100%;
@@ -93,7 +93,6 @@
 }
 
 @media (max-width: $tablet-width) {
-
   .services {
     padding: 50px 25px 80px 25px;
   }
@@ -131,7 +130,6 @@
 }
 
 @media (max-width: $mobile-width) {
-
   .services {
     padding-left: 15px;
     padding-right: 15px;
@@ -154,5 +152,4 @@
   .services__item {
     margin-bottom: 31px;
   }
-
 }

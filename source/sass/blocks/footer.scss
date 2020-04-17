@@ -147,7 +147,6 @@
   }
 
   .footer__copyright {
-
     &--bottom {
       display: none;
     }
@@ -164,7 +163,6 @@
 }
 
 @media (max-width: $mobile-width) {
-
   .footer {
     &__nav-list,
     &__address {
@@ -203,8 +201,6 @@
     top: 28px;
     right: 17px;
 
-    display: block;
-
     &--nojs {
       display: none;
     }
@@ -237,7 +233,6 @@
   }
 
   .footer__copyright {
-
     &--privacy {
       align-self: center;
       margin-right: 0;

@@ -6,9 +6,9 @@
   bottom: 0;
   left: 0;
   width: 490px;
-  height: 650px;
+  height: 605px;
   margin: auto;
-  padding: 33px 40px 35px 40px;
+  padding: 6px 40px 35px 40px;
 
   display: none;
 
@@ -22,8 +22,10 @@
 }
 
 .popup-feedback__title {
+  font-family: $alternate-font;
   font-size: 28px;
   line-height: 140.6%;
+  font-weight: 400;
 
   margin-bottom: 3%;
 }
@@ -61,13 +63,21 @@
 }
 
 .popup-feedback__button {
-  margin-bottom: 30px;
+  margin-bottom: 29px;
 }
 
 .popup-feedback__consent {
   width: 100%;
 }
 
+.popup-feedback__input {
+  padding-bottom: 17px;
+}
+
 .popup-feedback__input + label {
   padding-left: 50px;
+}
+
+.popup-feedback__textarea {
+  height: 104px;
 }
