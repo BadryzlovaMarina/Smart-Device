@@ -1,7 +1,13 @@
 'use strict';
 
 var phoneMask = IMask(
-    document.getElementById('phone-mask'), {
+    document.querySelector('.form__phone-mask'), {
+      mask: '+{7} (000) 000-00-00'
+    }
+);
+
+var phoneMask = IMask(
+    document.querySelector('.popup-feedback__phone-mask'), {
       mask: '+{7} (000) 000-00-00'
     }
 );
@@ -29,18 +35,21 @@ link.addEventListener('click', function (evt) {
   evt.preventDefault();
   popup.classList.add('popup-feedback--show');
   overlay.classList.add('popup-overlay--show');
+  document.body.style.overflow = 'hidden';
 });
 
 close.addEventListener('click', function (evt) {
   evt.preventDefault();
   popup.classList.remove('popup-feedback--show');
   overlay.classList.remove('popup-overlay--show');
+  document.body.style.overflow = null;
 });
 
 overlay.addEventListener('click', function (evt) {
   evt.preventDefault();
   popup.classList.remove('popup-feedback--show');
   overlay.classList.remove('popup-overlay--show');
+  document.body.style.overflow = null;
 });
 
 window.addEventListener('keydown', function (evt) {
@@ -49,6 +58,7 @@ window.addEventListener('keydown', function (evt) {
     if (popup.classList.contains('popup-feedback--show')) {
       popup.classList.remove('popup-feedback--show');
       overlay.classList.remove('popup-overlay--show');
+      document.body.style.overflow = null;
     }
   }
 });

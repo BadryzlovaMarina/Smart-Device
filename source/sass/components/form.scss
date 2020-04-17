@@ -27,6 +27,7 @@
 
   &::placeholder {
     color: $alternate-font-color;
+    opacity: 1;
   }
 
   &:hover {
@@ -35,6 +36,10 @@
 
   &:focus {
     opacity: 1;
+  }
+
+  &:invalid {
+    box-shadow: none;
   }
 }
 

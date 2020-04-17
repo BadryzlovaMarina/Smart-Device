@@ -49,8 +49,9 @@
   .info {
     width: 100%;
     padding-top: 16px;
-    padding-left: 210px;
+    padding-left: 212px;
     padding-bottom: 85px;
+    padding-right: 25px;
 
     &::after {
       top: 14px;
@@ -62,12 +63,19 @@
   }
 
   .info__title {
-    margin-bottom: 27px;
+    margin-bottom: 26px;
+
     font-size: 32px;
     line-height: 140.62%;
   }
 
   .info__description {
+    margin-bottom: 20px;
+
+    &:last-of-type {
+      margin-bottom: 42px;
+    }
+
     span:first-child {
       display: inline;
     }
@@ -81,7 +89,7 @@
 @media (max-width: $mobile-width) {
   .info {
     width: 100%;
-    padding: 29px 15px 64px 15px;
+    padding: 33px 15px 65px 15px;
 
     &::after {
       display: none;
@@ -89,7 +97,9 @@
   }
 
   .info__title {
-    margin-bottom: 20px;
+    margin-bottom: 21px;
+
+    font-size: 28px;
   }
 
   .info__description {

@@ -7,7 +7,8 @@
   left: 0;
   width: 490px;
   height: 605px;
-  margin: auto;
+  margin: 0 auto;
+  margin-top: 136px;
   padding: 6px 40px 35px 40px;
 
   display: none;
@@ -32,7 +33,7 @@
 
 .popup-feedback__text {
   width: 90%;
-  margin-bottom: 7.4%;
+  margin-bottom: 30px;
 }
 
 .popup-feedback__wrap-contact {
@@ -41,6 +42,10 @@
 
 .popup-feedback__fieldset {
   margin-bottom: 30px;
+
+  &--message {
+    margin-bottom: 26px;
+  }
 }
 
 .popup-feedback__button-close {
@@ -72,12 +77,24 @@
 
 .popup-feedback__input {
   padding-bottom: 17px;
+  padding-left: 21px;
 }
 
 .popup-feedback__input + label {
   padding-left: 50px;
+
+  &::before {
+    left: 0;
+  }
+}
+
+.popup-feedback__input:checked + label {
+  &::after {
+    left: 4px;
+  }
 }
 
 .popup-feedback__textarea {
   height: 104px;
+  padding-left: 21px;
 }

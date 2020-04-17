@@ -13,17 +13,16 @@
   <script>
     document.createElement("picture");
   </script>
-  <script src="js/picturefill.min.js" async></script>
 </head>
 <body>
-  <div class="index__wrap">
+  <div class="index-wrap">
     <header class="header">
       <div class="header__logo logo">
         <a class="logo__link" href="#">
           <img class="logo__image" src="img/logo.svg" width="52" height="52" alt="Логотип Smart Device">
           <div class="logo__wrapper logo__wrapper--header">
-            <p class="logo__title-ru">Smart Device</p>
-            <p class="logo__title-eng">Умные технологии</p>
+            <p class="logo__title-eng">Smart Device</p>
+            <p class="logo__title-ru">Умные технологии</p>
           </div>
         </a>
       </div>
@@ -44,8 +43,8 @@
       <h1 class="banner__title">Печатные платы</h1>
       <p class="banner__description">Производство и монтаж, поставка комплектующих, блоков и модулей</p>
       <a href="#feedback" class="banner__link-consult button button--blue anchor-link">
-        <span class="banner__link-text banner__link-text--desktop" aria-label="Получить бесплатную консультацию">Получить бесплатную консультацию</span>
-        <span class="banner__link-text banner__link-text--mobile" aria-label="Получить бесплатную консультацию">Бесплатная консультация</span>
+        <span class="banner__link-text banner__link-text--desktop">Получить бесплатную консультацию</span>
+        <span class="banner__link-text banner__link-text--mobile">Бесплатная консультация</span>
       </a>
       <a class="banner__link-scroll anchor-link" href="#advantages">Скролл вниз</a>
     </section>
@@ -60,7 +59,7 @@
               <use xlink:href="img/sprite_auto.svg#icon-stopwatch"></use>
             </svg>
             <h3 class="advantages__title">Оперативные сроки</h3>
-            <p class="advantages__description">Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки.</p>
+            <p class="advantages__description advantages__description--period">Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки.</p>
           </li>
           <li class="advantages__item">
             <svg class="advantages__icon" width="35" height="35">
@@ -73,7 +72,7 @@
             <svg class="advantages__icon" width="36" height="31">
               <use xlink:href="img/sprite_auto.svg#icon-detective"></use>
             </svg>
-            <h3 class="advantages__title">Полная конфиденциальность</h3>
+            <h3 class="advantages__title advantages__title--confident">Полная конфиденциальность</h3>
             <p class="advantages__description">По желанию клиента мы обеспечиваем полную конфеденциальность.</p>
           </li>
           <li class="advantages__item">
@@ -81,7 +80,7 @@
               <use xlink:href="img/sprite_auto.svg#icon-tag"></use>
             </svg>
             <h3 class="advantages__title">Персонализация стоимости</h3>
-            <p class="advantages__description">Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
+            <p class="advantages__description advantages__description--cost">Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
           </li>
         </ul>
       </section>
@@ -164,7 +163,7 @@
                 </fieldset>
                 <fieldset class="form__fieldset">
                   <label aria-label="Ваш телефон">
-                    <input id="phone-mask" class="form__input feedback__input" type="text" name="telephone" placeholder="Телефон" minlength="18" maxlength="18" required>
+                    <input class="form__input feedback__input form__phone-mask" type="text" name="telephone" placeholder="Телефон" minlength="18" maxlength="18" required>
                   </label>
                 </fieldset>
               </div>
@@ -192,8 +191,8 @@
             <a class="logo__link" href="#">
               <img class="logo__image logo__image--footer" src="img/logo.svg" width="52" height="52" alt="Логотип Smart Device">
               <div class="logo__wrapper">
-                <p class="logo__title-ru">Service Device</p>
-                <p class="logo__title-eng">Умные технологии</p>
+                <p class="logo__title-eng">Service Device</p>
+                <p class="logo__title-ru">Умные технологии</p>
               </div>
             </a>
           </div>
@@ -264,7 +263,7 @@
             <p class="contact__text">г. Мытищи, Олимпийский проспект, д.10</p>
             <p class="contact__text">+7 (495) 589-40-50</p>
             <p class="contact__text">+7 (925) 003-87-67</p>
-            <p class="contact__text">+7 (926) 926-80-79</p>
+            <p class="contact__text">+7 (926) 926-080-79</p>
           </div>
         </div>
       </div>
@@ -293,18 +292,18 @@
         </fieldset>
         <fieldset class="form__fieldset popup-feedback__fieldset">
           <label aria-label="Ваш телефон">
-            <input id="phone-mask" class="form__input popup-feedback__input" type="text" name="telephone" placeholder="Телефон" minlength="18" maxlength="18" required>
+            <input class="form__input popup-feedback__input popup-feedback__phone-mask" type="text" name="telephone" placeholder="Телефон" minlength="18" maxlength="18" required>
           </label>
         </fieldset>
       </div>
-      <fieldset class="form__fieldset popup-feedback__fieldset">
+      <fieldset class="form__fieldset popup-feedback__fieldset popup-feedback__fieldset--message">
         <textarea class="form__textarea popup-feedback__textarea" name="message" placeholder="Ваш вопрос" rows="7"></textarea>
       </fieldset>
       <div class="popup-feedback__wrap-send form__wrap-send">
         <button class="popup-feedback__button button" type="submit">Отправить</button>
         <fieldset class="form__fieldset field-consent popup-feedback__consent">
-          <input class="form__input visually-hidden field-consent__input popup-feedback__input" type="checkbox" name="consent" id="consent" checked required>
-          <label for="consent">Я согласен на обработку персональных данных</label>
+          <input class="form__input visually-hidden field-consent__input popup-feedback__input" type="checkbox" name="consent" id="popup-consent" checked required>
+          <label for="popup-consent">Я согласен на обработку персональных данных</label>
         </fieldset>
       </div>
     </form>

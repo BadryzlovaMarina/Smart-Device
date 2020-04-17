@@ -131,14 +131,12 @@
 
 @media (max-width: $mobile-width) {
   .services {
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 63px;
+    padding: 52px 15px 63px;
   }
 
   .services__title {
     width: 96%;
-    margin-bottom: 44px;
+    margin-bottom: 42px;
     padding-left: 10px;
 
     font-size: 28px;

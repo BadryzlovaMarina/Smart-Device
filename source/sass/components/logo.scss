@@ -18,7 +18,7 @@
   margin-right: 16px;
 }
 
-.logo__title-ru {
+.logo__title-eng {
   @include space-reset;
   padding-top: 7px;
   font-family: $alternate-font;
@@ -27,13 +27,14 @@
   font-weight: 700;
 }
 
-.logo__title-eng {
+.logo__title-ru {
   @include space-reset;
   font-family: $logo-title-font;
   font-size: 12px;
   line-height: 14px;
   font-weight: 500;
   color: $logo-title-font-color;
+  text-transform: lowercase;
 }
 
 @media (max-width: $mobile-width) {
