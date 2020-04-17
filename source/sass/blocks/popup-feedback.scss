@@ -1,0 +1,73 @@
+.popup-feedback {
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 490px;
+  height: 650px;
+  margin: auto;
+  padding: 33px 40px 35px 40px;
+
+  display: none;
+
+  z-index: 50;
+
+  &--show {
+    display: block;
+
+    animation: bounce 0.5s;
+  }
+}
+
+.popup-feedback__title {
+  font-size: 28px;
+  line-height: 140.6%;
+
+  margin-bottom: 3%;
+}
+
+.popup-feedback__text {
+  width: 90%;
+  margin-bottom: 7.4%;
+}
+
+.popup-feedback__wrap-contact {
+  flex-direction: column;
+}
+
+.popup-feedback__fieldset {
+  margin-bottom: 30px;
+}
+
+.popup-feedback__button-close {
+  top: 20px;
+  right: 20px;
+
+  &::before {
+    background-color: $button-close-color;
+    transform: rotate(-45deg);
+  }
+
+  &::after {
+    background-color: $button-close-color;
+    transform: rotate(45deg);
+  }
+}
+
+.popup-feedback__wrap-send {
+  flex-direction: column;
+}
+
+.popup-feedback__button {
+  margin-bottom: 30px;
+}
+
+.popup-feedback__consent {
+  width: 100%;
+}
+
+.popup-feedback__input + label {
+  padding-left: 50px;
+}

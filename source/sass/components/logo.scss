@@ -1,0 +1,53 @@
+.logo {
+  width: 220px;
+}
+
+.logo__link {
+  display: flex;
+  color: inherit;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+}
+
+.logo__image {
+  width: 52px;
+  height: 52px;
+  margin-right: 16px;
+}
+
+.logo__title-ru {
+  @include space-reset;
+  padding-top: 7px;
+  font-family: $alternate-font;
+  font-size: 25px;
+  line-height: 29px;
+  font-weight: 700;
+}
+
+.logo__title-eng {
+  @include space-reset;
+  font-family: $logo-title-font;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 500;
+  color: $logo-title-font-color;
+}
+
+@media (max-width: $mobile-width) {
+  .logo__image {
+    width: 38px;
+    height: 38px;
+
+    &--footer {
+      width: 52px;
+      height: 52px;
+    }
+  }
+
+  .logo__wrapper--header {
+      display: none;
+    }
+}

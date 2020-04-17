@@ -1,0 +1,77 @@
+.field-consent {
+  width: 270px;
+}
+
+.field-consent__input + label {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 8px;
+  padding-left: 40px;
+
+  font-size: 14px;
+  line-height: 16px;
+  opacity: 0.8;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+  }
+
+  &::before {
+    width: 16px;
+    height: 16px;
+    top: 9px;
+    left: 7px;
+    border: 2px solid $basic-bg-color;
+  }
+}
+
+.field-consent__input:checked + label {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 5px;
+    top: 15px;
+    left: 12px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url("../img/bg-icon-check.svg");
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .field-consent__input + label {
+    padding-left: 33px;
+
+    &::before {
+      left: 0;
+    }
+  }
+
+  .field-consent__input:checked + label {
+    &::after {
+      left: 5px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .field-consent {
+    width: 100%;
+  }
+}

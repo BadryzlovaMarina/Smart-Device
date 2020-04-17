@@ -1,0 +1,9 @@
+@mixin space-reset {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin list-reset {
+  @include space-reset;
+  list-style: none;
+}

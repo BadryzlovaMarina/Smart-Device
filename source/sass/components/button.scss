@@ -1,0 +1,65 @@
+.button {
+  box-sizing: border-box;
+  min-width: 180px;
+  margin: 0;
+  padding: 13px 22px;
+
+  font-family: $alternate-font;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  color: $alternate-font-color;
+  text-transform: uppercase;
+
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+
+  text-align: center;
+  vertical-align: middle;
+
+  cursor: pointer;
+
+  &--toggle {
+    position: relative;
+    padding: 0;
+    width: 37px;
+    height: 13px;
+    min-width: 0;
+    border: none;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: $basic-bg-color;
+    }
+
+    &::before {
+      top: 0;
+    }
+
+    &::after {
+      bottom: 0;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+}
+
+.button--blue {
+  border-color: $button-color-blue;
+  background-color: $button-color-blue;
+}
+
+.button--details {
+  color: $feature-title-font-color;
+  border-color: $feature-color-blue;
+}

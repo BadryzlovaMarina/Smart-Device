@@ -1,0 +1,150 @@
+.header {
+  display: flex;
+  align-items: center;
+  max-width: 1411px;
+  margin: 0 auto;
+  padding: 33px 25px;
+}
+
+.header__logo {
+  margin-right: 7%;
+}
+
+.header__main-nav {
+  margin-right: 20px;
+}
+
+.header__contacts-list {
+  @include list-reset;
+  width: 30.7%;
+  min-width: 360px;
+  margin-left: auto;
+  margin-right: 3.4%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__contacts-item {
+  &--mail {
+    min-width: 136px;
+    margin-right: 20px;
+  }
+
+  &--phone {
+      min-width: 215px;
+    }
+}
+
+.header__contacts-link {
+  padding: 13px 0;
+  padding-left: 40px;
+  position: relative;
+  color: $alternate-font-color;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+  }
+
+  &--mail {
+    &::before {
+      width: 19px;
+      height: 14px;
+      background-image: url("../img/icon-mail.svg");
+    }
+  }
+
+  &--phone {
+    &::before {
+      width: 18px;
+      height: 18px;
+      left: 4px;
+      background-image: url("../img/icon-phone.svg");
+    }
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .header {
+    min-width: 720px;
+    padding-top: 20px;
+  }
+
+  .header__main-nav {
+    margin-left: auto;
+  }
+
+  .header__contacts-list {
+    margin-left: 15px;
+    margin-right: 0;
+    min-width: 84px;
+    width: 10%;
+  }
+
+  .header__contacts-item {
+    min-width: 25px;
+
+    &--mail {
+      margin-right: 25px;
+    }
+  }
+
+  .header__contacts-link {
+    padding-left: 25px;
+
+    span {
+      display: none;
+    }
+
+    &--mail::before {
+      width: 25px;
+      height: 19px;
+    }
+
+    &--phone::before {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .header__button-callback {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .header {
+    min-width: 286px;
+    padding-top: 17px;
+    padding-left: 17px;
+    padding-right: 17px;
+    align-items: center;
+  }
+
+  .header__logo {
+    margin-right: 0;
+  }
+
+  .header__contacts-list {
+    margin-left: 7px;
+    min-width: 74px;
+  }
+
+  .header__contacts-item {
+    &--mail {
+      margin-right: 23px;
+    }
+  }
+}

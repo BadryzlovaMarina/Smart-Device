@@ -1,0 +1,147 @@
+.banner {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  max-width: 1470px;
+  margin: 0 auto;
+  padding: 198px 25px 294px 25px;
+}
+
+.banner__title {
+  @include space-reset;
+  width: 59%;
+  margin-bottom: 28px;
+
+  font-family: $alternate-font;
+  font-size: 80px;
+  line-height: 94px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.banner__description {
+  @include space-reset;
+  position: relative;
+  width: 50%;
+  max-width: 680px;
+  margin-bottom: 58px;
+  padding-left: 97px;
+
+  font-size: 22px;
+  line-height: 34px;
+  font-weight: 400;
+  text-transform: lowercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 3px;
+    width: 66px;
+    height: 2px;
+    background-color: $alternate-font-color;
+  }
+}
+
+.banner__link-consult {
+  margin-left: 99px;
+  padding: 17px 40px 17px 43px;
+
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.banner__link-text--mobile {
+  display: none;
+}
+
+.banner__link-scroll {
+  position: absolute;
+  width: 100px;
+  left: -14px;
+  bottom: 132px;
+  transform: rotate(-90deg);
+
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $alternate-font-color;
+
+  opacity: 0.5;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+}
+
+@media (max-width: $tablet-width)  {
+  .banner {
+    width: 83%;
+    padding-top: 85px;
+    padding-bottom: 181px;
+  }
+
+  .banner__title {
+    margin-bottom: 28px;
+
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .banner__description {
+    width: 66%;
+    padding-left: 50px;
+    margin-bottom: 70px;
+    font-size: 18px;
+    line-height: 156.8%;
+
+    &::before {
+      width: 33px;
+    }
+  }
+
+  .banner__link-consult {
+    margin-left: 50px;
+    padding: 15px 31px;
+  }
+
+  .banner__link-scroll {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .banner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 198px 15px 72px 15px;
+  }
+
+  .banner__title {
+    font-size: 40px;
+    line-height: 47px;
+  }
+
+  .banner__description {
+    width: 240px;
+    margin-right: 0;
+    margin-bottom: 42px;
+    font-size: 16px;
+  }
+
+  .banner__link-consult {
+    margin-left: 0;
+    align-self: start;
+  }
+
+  .banner__link-text--desktop {
+    display: none;
+  }
+
+  .banner__link-text--mobile {
+    display: block;
+  }
+}

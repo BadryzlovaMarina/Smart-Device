@@ -1,3 +1,22 @@
-h1 {
-  color: red;
-}
+@import "base/normalize";
+@import "base/fonts";
+@import "base/variable";
+@import "base/mixins";
+@import "base/base";
+@import "base/wrappers";
+@import "components/logo";
+@import "components/button";
+@import "components/form";
+@import "components/field-consent";
+@import "components/site-nav";
+@import "components/social";
+@import "components/contact";
+@import "components/toggle";
+@import "blocks/header";
+@import "blocks/banner";
+@import "blocks/advantages";
+@import "blocks/info";
+@import "blocks/services";
+@import "blocks/feedback";
+@import "blocks/footer";
+@import "blocks/popup-feedback";
