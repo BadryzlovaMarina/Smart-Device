@@ -1,7 +1,7 @@
 .services {
   box-sizing: border-box;
   background-color: $alternate-bg-color;
-  padding: 90px 25px 99px 25px;
+  padding: 90px 25px 97px 25px;
 }
 
 .services__title {
@@ -94,7 +94,7 @@
 
 @media (max-width: $tablet-width) {
   .services {
-    padding: 50px 25px 80px 25px;
+    padding: 50px 25px 77px 25px;
   }
 
   .services__title {
@@ -131,7 +131,7 @@
 
 @media (max-width: $mobile-width) {
   .services {
-    padding: 50px 15px 63px;
+    padding: 51px 15px 65px;
   }
 
   .services__title {
