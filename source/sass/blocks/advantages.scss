@@ -93,6 +93,10 @@
     margin-bottom: 10px;
   }
 
+  .advantages__description {
+    margin-right: 7px;
+  }
+
   .advantages__icon {
     top: 23px;
     left: 25px;
@@ -101,7 +105,7 @@
 
 @media (max-width: $mobile-width) {
   .advantages {
-    padding: 39px 15px 25px 15px;
+    padding: 37px 15px 25px;
   }
 
   .advantages__list {
@@ -115,10 +119,14 @@
     max-width: none;
     margin-bottom: 20px;
     margin-right: 0;
-    padding: 70px 12px 25px 25px;
+    padding: 71px 12px 22px 25px;
 
     &:last-child {
       margin-bottom: 0;
+    }
+
+    &--confident {
+      padding-top: 63px;
     }
   }
 
@@ -126,11 +134,16 @@
     margin-bottom: 10px;
 
     font-size: 20px;
-    line-height: 140.6%;
+    line-height: 28px;
 
     &--confident {
-      margin-right: 5px;
+      margin-right: 7px;
+      margin-bottom: 0;
     }
+  }
+
+  .advantages__description {
+    margin-right: 0;
   }
 
   .advantages__description--period,

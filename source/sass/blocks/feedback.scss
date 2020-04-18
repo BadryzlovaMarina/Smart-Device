@@ -85,13 +85,11 @@
 @media (max-width: $mobile-width) {
   .feedback__wrap {
     width: 100%;
-    padding: 30px 15px 38px;
-    padding-top: 30px;
-    padding-bottom: 38px;
+    padding: 30px 15px 41px;
   }
 
   .feedback__title {
-    margin-bottom: 13px;
+    margin-bottom: 12px;
     font-size: 28px;
   }
 
@@ -113,7 +111,7 @@
   }
 
   .feedback__textarea {
-    margin-bottom: 23px;
+    margin-bottom: 27px;
     height: 105px;
   }
 

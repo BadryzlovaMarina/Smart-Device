@@ -102,7 +102,7 @@
     margin: 0;
     margin-bottom: 50px;
     font-size: 32px;
-    line-height: 140.62%;
+    line-height: 45px;
   }
 
   .services__list {
@@ -131,7 +131,7 @@
 
 @media (max-width: $mobile-width) {
   .services {
-    padding: 52px 15px 63px;
+    padding: 50px 15px 63px;
   }
 
   .services__title {
@@ -140,14 +140,19 @@
     padding-left: 10px;
 
     font-size: 28px;
+    line-height: 39px;
   }
 
   .services__link-title {
-    top: 21px;
+    top: 19px;
     left: 36px;
+
+    &--parts {
+      top: 28px;
+    }
   }
 
   .services__item {
-    margin-bottom: 31px;
+    margin-bottom: 30px;
   }
 }
