@@ -68,7 +68,8 @@
       url("../img/bg-header-mobile@1x.png");
 
     background-size: 301px 220px, 460px 510px, cover;
-    background-position: calc(50% + 15px) 95px, 170px 0, center top;
+    // background-position: calc(50% + 15px) 95px, 170px 0, center top;
+    background-position: calc(50% + 15px) 95px, calc(50% + 240px) 0, center top;
 
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {

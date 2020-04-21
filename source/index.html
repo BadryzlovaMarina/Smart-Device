@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Smart Device - производство и монтаж, поставка комплектующих, блоков и модулей">
+  <meta name="format-detection" content="telephone=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Smart Device</title>
   <link rel="preload" href="fonts/PTMono-Regular.woff2" as="font" crossorigin="anonymous">
@@ -18,7 +20,7 @@
   <div class="index-wrap">
     <header class="header">
       <div class="header__logo logo">
-        <a class="logo__link" href="#">
+        <a class="logo__link">
           <img class="logo__image" src="img/logo.svg" width="52" height="52" alt="Логотип Smart Device">
           <div class="logo__wrapper logo__wrapper--header">
             <p class="logo__title-eng">Smart Device</p>
@@ -27,7 +29,7 @@
         </a>
       </div>
       <nav class="header__main-nav menu menu--closed">
-        <button class="menu__button button button--toggle"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="menu__button button button--toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </nav>
       <ul class="header__contacts-list">
         <li class="header__contacts-item header__contacts-item--mail">
@@ -102,48 +104,18 @@
       </h2>
       <ul class="services__list">
         <li class="services__item">
-          <a href="" class="services__link">
+          <a href="" class="services__link services__link--production">
             <h3 class="services__link-title">Производство печатных плат</h3>
-            <div class="services__media-wrapper">
-              <picture>
-                <source type="image/webp" media="(min-width: 1024px)" srcset="img/production-desktop@1x.webp 1x, img/production-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/production-tablet@1x.webp 1x, img/production-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/production-mobile@1x.webp 1x, img/production-mobile@2x.webp 2x">
-                <source media="(min-width: 1024px)" srcset="img/production-desktop@1x.jpg 1x, img/production-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/production-tablet@1x.jpg 1x, img/production-tablet@2x.jpg 2x">
-                <img width="290" height="256" src="img/production-mobile@1x.jpg" srcset="img/production-mobile@2x.jpg 2x" alt="Производство печатных плат">
-              </picture>
-            </div>
           </a>
         </li>
         <li class="services__item">
-          <a href="" class="services__link">
+          <a href="" class="services__link services__link--montage">
             <h3 class="services__link-title">Монтаж печатных плат</h3>
-            <div class="services__media-wrapper">
-              <picture>
-                <source type="image/webp" media="(min-width: 1024px)" srcset="img/montage-desktop@1x.webp 1x, img/montage-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/montage-tablet@1x.webp 1x, img/montage-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/montage-mobile@1x.webp 1x, img/montage-mobile@2x.webp 2x">
-                <source media="(min-width: 1024px)" srcset="img/montage-desktop@1x.jpg 1x, img/montage-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/montage-tablet@1x.jpg 1x, img/montage-tablet@2x.jpg 2x">
-                <img width="290" height="256" src="img/montage-mobile@1x.jpg" srcset="img/montage-mobile@2x.jpg 2x" alt="Монтаж печатных плат">
-              </picture>
-            </div>
           </a>
         </li>
         <li class="services__item">
-          <a href="" class="services__link">
-            <h3 class="services__link-title services__link-title--parts">Комплектующие для светотехники</h3>
-            <div class="services__media-wrapper">
-              <picture>
-                <source type="image/webp" media="(min-width: 1024px)" srcset="img/parts-desktop@1x.webp 1x, img/parts-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/parts-tablet@1x.webp 1x, img/parts-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/parts-mobile@1x.webp 1x, img/parts-mobile@2x.webp 2x">
-                <source media="(min-width: 1024px)" srcset="img/parts-desktop@1x.jpg 1x, img/parts-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/parts-tablet@1x.jpg 1x, img/parts-tablet@2x.jpg 2x">
-                <img width="290" height="256" src="img/parts-mobile@1x.jpg" srcset="img/parts-mobile@2x.jpg 2x" alt="Комплектующие для светотехники">
-              </picture>
-            </div>
+          <a href="" class="services__link services__link--parts">
+            <h3 class="services__link-title">Комплектующие для светотехники</h3>
           </a>
         </li>
       </ul>
@@ -168,7 +140,9 @@
                 </fieldset>
               </div>
               <fieldset class="form__fieldset">
-                <textarea class="form__textarea feedback__textarea" name="message" placeholder="Ваш вопрос" rows="7"></textarea>
+                <label aria-label="Ваш вопрос">
+                  <textarea class="form__textarea feedback__textarea" name="message" placeholder="Ваш вопрос" rows="7"></textarea>
+                </label>
               </fieldset>
               <div class="feedback__wrap-send form__wrap-send">
                 <button class="feedback__button button" type="submit">Задать вопрос</button>
@@ -261,19 +235,17 @@
           <button class="footer__toggle footer__toggle--address footer__toggle--closed footer__toggle--nojs toggle" type="button"><span class="visually-hidden">Открыть/закрыть</span></button>
           <div class="footer__address footer__address--nojs">
             <p class="contact__text">г. Мытищи, Олимпийский проспект, д.10</p>
-            <p class="contact__text">+7 (495) 589-40-50</p>
-            <p class="contact__text">+7 (925) 003-87-67</p>
-            <p class="contact__text">+7 (926) 926-080-79</p>
+            <a class="contact__link" href="#">+7 (495) 589-40-50</a>
+            <a class="contact__link" href="#">+7 (925) 003-87-67</a>
+            <a class="contact__link" href="#">+7 (926) 926-080-79</a>
           </div>
         </div>
       </div>
     </div>
     <div class="footer__container">
       <div class="footer__bottom-wrap">
-        <div class="footer__copyright-wrap">
-          <span class="footer__copyright footer__copyright--info">Все права защищены</span>
-          <span class="footer__copyright footer__copyright--bottom">1999-2018 SD Service Devices</span>
-        </div>
+        <span class="footer__copyright footer__copyright--info">Все права защищены</span>
+        <span class="footer__copyright footer__copyright--bottom">1999-2018 SD Service Devices</span>
         <a class="footer__copyright footer__copyright--privacy" href="#">Условия конфиденциальности</a>
         <a class="footer__copyright footer__copyright--developed" href="#">Developed by Wow Studio</a>
       </div>
@@ -287,7 +259,7 @@
       <div class="popup-feedback__wrap-contact form__wrap-contact">
         <fieldset class="form__fieldset popup-feedback__fieldset">
           <label aria-label="Ваше имя">
-            <input class="form__input popup-feedback__input" type="text" name="name" placeholder="Имя" required>
+            <input id="name" class="form__input popup-feedback__input" type="text" name="name" placeholder="Имя" required>
           </label>
         </fieldset>
         <fieldset class="form__fieldset popup-feedback__fieldset">
@@ -297,7 +269,9 @@
         </fieldset>
       </div>
       <fieldset class="form__fieldset popup-feedback__fieldset popup-feedback__fieldset--message">
-        <textarea class="form__textarea popup-feedback__textarea" name="message" placeholder="Ваш вопрос" rows="7"></textarea>
+        <label aria-label="Ваш вопрос">
+          <textarea class="form__textarea popup-feedback__textarea" name="message" placeholder="Ваш вопрос" rows="7"></textarea>
+        </label>
       </fieldset>
       <div class="popup-feedback__wrap-send form__wrap-send">
         <button class="popup-feedback__button button" type="submit">Отправить</button>
@@ -309,6 +283,7 @@
     </form>
   </section>
   <div class="popup-overlay"></div>
+  <script src="https://unpkg.com/imask"></script>
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
   <script>svg4everybody();</script>

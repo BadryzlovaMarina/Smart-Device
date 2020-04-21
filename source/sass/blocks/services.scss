@@ -22,7 +22,7 @@
   @include list-reset;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   width: 92%;
   max-width: 1170px;
   margin: 0 auto;
@@ -62,6 +62,26 @@
 }
 
 .services__link {
+  display: block;
+  min-height: 620px;
+  padding: 50px 44px 13px 44px;
+
+  box-sizing: border-box;
+  background-color: $alternate-bg-color;
+  background-repeat: no-repeat;
+
+  &--production {
+    background-image: url("../img/production-desktop@1x.png");
+  }
+
+  &--montage {
+    background-image: url("../img/montage-desktop@1x.png");
+  }
+
+  &--parts {
+    background-image: url("../img/parts-desktop@1x.png");
+  }
+
   &:hover,
   &:focus {
     opacity: 0.7;
@@ -74,22 +94,13 @@
 
 .services__link-title {
   @include space-reset;
-  position: absolute;
-  width: 160px;
-  top: 53px;
-  left: 44px;
+  max-width: 170px;
 
   font-family: $alternate-font;
   font-size: 20px;
   line-height: 30px;
   font-weight: 400;
   color: $alternate-font-color;
-}
-
-.services__media-wrapper {
-  height: 620px;
-  background-color: $alternate-img-bg-color;
-  opacity: 0.2;
 }
 
 @media (max-width: $tablet-width) {
@@ -120,12 +131,23 @@
     }
   }
 
-  .services__link-title {
-    top: 41px;
-  }
+  .services__link {
+    min-height: 256px;
+    padding: 40px 510px 13px 44px;
 
-  .services__media-wrapper {
-    height: 256px;
+    background-size: cover;
+
+    &--production {
+      background-image: url("../img/production-tablet@1x.png");
+    }
+
+    &--montage {
+      background-image: url("../img/montage-tablet@1x.png");
+    }
+
+    &--parts {
+      background-image: url("../img/parts-tablet@1x.png");
+    }
   }
 }
 
@@ -143,12 +165,21 @@
     line-height: 39px;
   }
 
-  .services__link-title {
-    top: 19px;
-    left: 36px;
+  .services__link {
+    padding-top: 20px;
+    padding-left: 35px;
+    padding-right: 90px;
+
+    &--production {
+      background-image: url("../img/production-mobile@1x.png");
+    }
+
+    &--montage {
+      background-image: url("../img/montage-mobile@1x.png");
+    }
 
     &--parts {
-      top: 28px;
+      background-image: url("../img/parts-mobile@1x.png");
     }
   }
 

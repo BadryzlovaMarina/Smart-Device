@@ -9,14 +9,26 @@
   text-transform: uppercase;
 }
 
-.contact__text {
+.contact__text,
+.contact__link {
   @include space-reset;
+  display: block;
   padding-right: 10px;
 
+  color: $footer-font-color;
   font-size: 15px;
   line-height: 25px;
   font-weight: 400;
   opacity: 0.5;
+}
+
+.contact__link {
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
 }
 
 @media (max-width: $mobile-width) {
